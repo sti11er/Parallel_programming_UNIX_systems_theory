@@ -1,0 +1,1 @@
+#include <stdio.h>\n int main(void)\n{\n    printf(\"YES\");\n}\n

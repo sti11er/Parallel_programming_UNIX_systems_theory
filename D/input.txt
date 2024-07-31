@@ -1,0 +1,45 @@
+// #include <stdio.h>
+// #include <string.h>
+// #include <stdlib.h>
+
+// int compare(const char *haystack, const char *needle) {
+//     int len = strlen(haystack);
+//     for (int i = 0; (i < len) && (*needle); i++) {
+//         if (*haystack != *needle) {
+//             return 0;
+//         }
+ 
+//         haystack++;
+//         needle++;
+//     }
+//     return (*needle == '\0');
+// }
+
+// const char* my_strstr(const char* haystack, const char* needle) {
+//     char *ans = NULL;
+//     while (*haystack != '\n') {
+//         if ((*haystack == *needle) && compare(haystack, needle)) {
+//             ans = (char *)haystack+strlen(needle);
+//             haystack+=strlen(needle);
+//             continue;
+//         }
+//         haystack++;
+//     }
+ 
+//     return ans;
+// }
+
+// int main(void) {
+//     char str[82];
+//     char *end = "end";
+//     fgets(str, 82, stdin);
+
+//     char *ans = (char *) my_strstr(str, end);
+//     if (ans != NULL) {
+//         printf("%s", ans);
+//     }
+//     else {
+//         printf("%s", str);
+//     }
+//     return 0;
+// }
